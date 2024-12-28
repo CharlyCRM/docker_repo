@@ -6,7 +6,7 @@ prepare_venv:
 	read -p "Introduce tu email de Git: " git_email; \
 	git config --global user.name "$$git_user"; \
 	git config --global user.email "$$git_email"; \
-    git config --global init.defaultBranch main; \
+      	git config --global init.defaultBranch main; \
 	echo "\nConfigurando SSH para GitHub..."; \
 	mkdir -p ~/.ssh; \
 	chmod 700 ~/.ssh; \
