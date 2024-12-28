@@ -1,13 +1,19 @@
-# README
+# 🐳 Docker Data Analysis Environment
 
-## Descripción
+<div align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/>
+</div>
+
+## 📝 Descripción
 Este proyecto proporciona un entorno Docker configurado para análisis de datos, con acceso a las credenciales SSH de GitHub para una integración perfecta.
 
-## Requisitos Previos
-- Docker instalado en tu sistema
-- Claves SSH configuradas para GitHub
+## ⚡ Requisitos Previos
+- 🐳 Docker instalado en tu sistema
+- 🔑 Claves SSH configuradas para GitHub
 
-## Configuración y Uso
+## 🚀 Configuración y Uso
 
 ### 1. Construir la imagen Docker
 `docker build -t nombre_imagen .`
@@ -53,8 +59,12 @@ Después de completar la configuración, puedes verificar la conexión con GitHu
 - Cada vez que crees un nuevo contenedor, necesitarás ejecutar `make prepare_venv` para configurar las credenciales.
 - Tus claves SSH originales en tu máquina host no se modifican.
 
-## Solución de Problemas
+## 🔧 Solución de Problemas
 Si encuentras problemas para localizar tus claves SSH, puedes:
+
+<details>
+<summary>📋 Ver pasos detallados</summary>
+
 1. Verificar su existencia:
    - Windows: `type C:\Users\TuUsuario\.ssh\id_rsa.pub`
    - Linux/Mac: `cat ~/.ssh/id_rsa.pub`
@@ -63,11 +73,23 @@ Si encuentras problemas para localizar tus claves SSH, puedes:
    ssh-keygen -t rsa -b 4096
    ```
 3. Añade la clave pública a GitHub en: https://github.com/settings/keys
+</details>
 
-## Autor
-Carlos Ramírez Martín - [www.linkedin.com/in/carlosramirezmartin](https://www.linkedin.com/in/carlosramirezmartin)
+## 👤 Autor
+<div align="center">
+  <h3>Carlos Ramírez Martín</h3>
+  <a href="https://www.linkedin.com/in/carlosramirezmartin">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://github.com/TuUsuarioGitHub">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</div>
 
-## Licencia
+## 📄 Licencia
+<div align="">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
+</div>
 Este proyecto está bajo la Licencia MIT
 
 MIT License
