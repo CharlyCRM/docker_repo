@@ -19,9 +19,11 @@ Este proyecto proporciona un entorno Docker configurado para análisis de datos,
 `docker build -t nombre_imagen .`
 
 ### 2. Ejecutar el Contenedor
-`docker run -it \
--v $(pwd):/core \
-nombre_imagen zsh`
+- Linux/MacOs
+- - `docker run -it -v $(pwd):/core nombre_imagen zsh`
+- Windows
+- -`docker run -it -v C:\ruta:/core nombre_imagen xsh`
+
 
 ### 3. Configurar Git y SSH dentro del Contenedor
 Una vez dentro del contenedro, ejecuta:
